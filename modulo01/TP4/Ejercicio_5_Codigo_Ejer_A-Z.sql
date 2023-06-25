@@ -1,0 +1,26 @@
+-- a) Select apellido From empleados;
+-- b) Select Distinct apellido from empleados;
+-- c) Select * From empleados;
+-- d) Select nombre, apellido From empleados;
+-- e) Select empleado_id, cuil_cuit, nombre, apellido, departamento, estado from empleados;
+-- f) Select cuil_cuit, Concat(nombre, ' ', apellido) as Nombre_Completo From empleados; 
+-- g) Select Upper(Concat(nombre, ' ', apellido)) as Nombre_Completo From empleados;
+-- h) Select Lower(Concat(nombre, ' ', apellido)) as Nombre_Completo From empleados;
+-- i) Select nombre, presupuesto as Nuevo_Valor from departamentos order by presupuesto, nombre asc;
+-- j) Select nombre From departamentos order by asc;
+-- k) Select nombre From departamentos order by nombre desc;
+-- l) Select apellido, nombre From empleados order by apellido, nombre;
+-- m) Select nombre, presupuesto From departamentos order by presupuesto desc limit 3;
+-- n) Select nombre, presupuesto From departamentos order by presupuesto asc limit 3;
+-- o) Select nombre, presupuesto From departamentos Where presupuesto >= "150000"; mayor que >, menor que <
+-- p) Select nombre, presupuesto From departamentos Where presupuesto >= "100000" and presupuesto <= "200000";
+-- q) Select nombre, presupuesto From departamentos Where presupuesto < "100000" or presupuesto > "200000"; 
+-- r) Select nombre From departamentos Where presupuesto Between 100000 and 200000;
+-- s) Select * from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id;
+-- t) Select * from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id Order by departamentos.nombre, empleados.apellido, empleados.nombre;
+-- u) Select departamentos.nombre from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id;
+-- v) Select departamentos.nombre from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id and empleados.cuil_cuit = "27-38382980-3";
+-- w) Select departamentos.nombre from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id and empleados.nombre = "Pepe" and empleados.apellido = "Ruiz";
+-- x) Select empleados.*, departamentos.nombre from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id and departamentos.nombre = "I+D" order by empleados.nombre, apellido;
+-- y) Select empleados.* from empleados inner join departamentos on empleados.departamento = departamentos.departamento_id where departamentos.nombre in ("I+D","Contabilidad","Sistemas") order by empleados.apellido;
+-- z) Select nombre From empleados Where departamento in (Select departamento_id From departamentos Where presupuesto < "100000" or presupuesto > "200000");
