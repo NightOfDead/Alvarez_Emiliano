@@ -1,0 +1,17 @@
+{ 
+    "Contabilidad": [
+        {"Id_Empleado": 10, "Nombre": "Juan Segovia"},
+        {"Id_Empleado": 15, "Nombre": "Ramiro Romero"}
+    ],
+
+    "Tecnologia": [
+        {"Id_Empleado": 12, "Nombre": "Pablo Richmon", "Puesto": "PM"},
+        {"Id_Empleado": 23, "Nombre": "Marta Fernandez", "Puesto": "TechLead"},
+        {"Id_Empleado": 24, "Nombre": "Pedro Mendez", "Puesto": "FullStack JS"},
+        {"Id_Empleado": 7, "Nombre": "Gabriela Lezcano", "Puesto": "Produccion"}
+    ],
+
+    "Comercial": [
+        {"Id_Empleado": 2, "Nombre": "Fabiana Martines"}
+    ]
+}
